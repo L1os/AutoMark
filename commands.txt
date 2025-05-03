@@ -1,0 +1,39 @@
+===== ===== CREATE CONTAINER ===== =====
+
+
+=== for cmd ===
+
+docker pull liosu/automark:1.0.0
+docker create -p 5000:5000 --name "automark-1.0.0" -v "%cd%\shared:/app/shared" -e PYTHONUNBUFFERED=1 liosu/automark:1.0.0
+
+
+=== for powershell ===
+
+docker pull liosu/automark:1.0.0
+docker create -p 5000:5000 --name "automark-1.0.0" -v "$PWD\shared:/app/shared" -e PYTHONUNBUFFERED=1 liosu/automark:1.0.0
+
+
+=== for bash compatible ===
+
+docker pull liosu/automark:1.0.0
+docker create -p 5000:5000 --name "automark-1.0.0" -v "./shared:/app/shared" -e PYTHONUNBUFFERED=1 liosu/automark:1.0.0
+
+
+
+
+===== ===== START AND STOP CONTAINER ===== =====
+
+
+=== start (use start -a to see logs in terminal) ===
+
+docker start automark-1.0.0
+
+
+=== stop ===
+
+docker stop automark-1.0.0
+
+
+=== logs ===
+
+docker logs automark-1.0.0
