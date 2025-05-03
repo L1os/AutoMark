@@ -5,7 +5,7 @@ My university dissertation project.
 A tool designed for computer science university lecturers to automate marking student submissions.  
 
 
-### Use cases:  
+### Use cases  
 
 Automatically generate test cases from a solution.  
 Run an auto-generated test case on one or many submissions. Generates a PDF with the results.  
