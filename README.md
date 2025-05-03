@@ -8,8 +8,7 @@ A tool designed for computer science university lecturers to automate marking st
 ### Use cases:  
 
 Automatically generate test cases from a solution.  
-Run an auto-generated test case on one or many submissions.  
-- Generates a PDF with the results.  
+Run an auto-generated test case on one or many submissions. Generates a PDF with the results.  
 
 
 ### Items
@@ -28,7 +27,7 @@ Container mount point, contains some other folders required by the app.
 
 `shared/solutions/`  
 Contains `Sherlock.java`, a small file to test the auto generation feature.  
-- code from [Sherlock and Anagrams](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem "Hackerrank Problem") discussions, written by [wilson155079](https://www.hackerrank.com/profile/wilson155079 "Hackerrank User").
+- Code from [Sherlock and Anagrams](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem "Hackerrank Problem") discussions, written by [wilson155079](https://www.hackerrank.com/profile/wilson155079 "Hackerrank User")
 
 `shared/submissions/`  
 Contains some .java files that are a copy of Sherlock.java with some code commented out - designed to fail 1/4 tests.  
@@ -89,7 +88,7 @@ Using `docker start` automatically starts in detached mode, meaning the terminal
 
 To get **logs**, run `docker logs automark-1.0.0`.  
 To get live logs, run with the `-a` tag, e.g. `docker start -a automark-1.0.0`.  
-- With this tag, closing the terminal or pressing `CTRL+C` will stop the container.  
+With this tag, closing the terminal or pressing `CTRL+C` will stop the container.  
 
 
 ### Running via Docker Desktop  
