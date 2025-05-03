@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 docker start automark-1.0.0
 
