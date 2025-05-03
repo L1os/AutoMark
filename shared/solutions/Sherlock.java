@@ -1,3 +1,6 @@
+// solution to hackerrank problem -> https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
+// written by wilson155079 -> https://www.hackerrank.com/profile/wilson155079
+
 import java.util.Arrays;
 import java.util.HashMap;
 

@@ -1,12 +1,37 @@
 # AutoMark  
 
-My university dissertation project. A tool designed for computer science university lecturers to automate marking student submissions.  
+My university dissertation project. 
 
-###### Use cases:  
+A tool designed for computer science university lecturers to automate marking student submissions.  
+
+
+### Use cases:  
 
 Automatically generate test cases from a solution.  
 Run an auto-generated test case on one or many submissions.  
 - Generates a PDF with the results.  
+
+
+### Items
+
+`setup.sh`  
+Pulls docker image and creates container.  
+
+`run.sh`  
+Starts container and calls `browser.py` which launches a web browser once the container is running.  
+
+`commands.txt`  
+All commands from setup and run scripts, plus some variations and logs.  
+
+`shared/`  
+Container mount point, contains some other folders required by the app.  
+
+`shared/solutions/`  
+Contains `Sherlock.java`, a small file to test the auto generation feature.  
+- code from [Sherlock and Anagrams](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem "Hackerrank Problem") discussions, written by [wilson155079](https://www.hackerrank.com/profile/wilson155079 "Hackerrank User").
+
+`shared/submissions/`  
+Contains some .java files that are a copy of Sherlock.java with some code commented out - designed to fail 1/4 tests.  
 
 
 
@@ -58,7 +83,7 @@ All commands can be found in `commands.txt` for copying and pasting.
 Once the container has been created, the app can be run from anywhere with the docker start command, or via docker desktop.  
 
 
-###### Running via Terminal  
+### Running via Terminal  
 
 Using `docker start` automatically starts in detached mode, meaning the terminal is free to be used for other things or closed entirely. The container will keep running until the `docker stop` command is executed.  
 
@@ -67,7 +92,7 @@ To get live logs, run with the `-a` tag, e.g. `docker start -a automark-1.0.0`.
 - With this tag, closing the terminal or pressing `CTRL+C` will stop the container.  
 
 
-###### Running via Docker Desktop  
+### Running via Docker Desktop  
 
 Go to the `Containers` tab (in the top left). There you will see the container with the name `automark-1.0.0`.  
 There is a play button on the right hand side, under `Actions`. Clicking this play button will launch the container and turn into a stop button, used to stop the container.  

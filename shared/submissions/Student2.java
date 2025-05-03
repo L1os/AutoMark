@@ -1,3 +1,7 @@
+// solution to hackerrank problem -> https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
+// written by wilson155079 -> https://www.hackerrank.com/profile/wilson155079
+
+// import java.util.Arrays;
 import java.util.HashMap;
 
 class Sherlock {
@@ -7,8 +11,10 @@ class Sherlock {
         for (int i = 0; i < s.length(); i++) {
             for (int j = i; j < s.length(); j++) {
                 char[] arr = s.substring(i, j + 1).toCharArray();
+                // Arrays.sort(arr);
                 String keyVal = String.valueOf(arr);
                 
+                // map.put(keyVal, map.getOrDefault(keyVal, 0) + 1);
             }
         }        
         
