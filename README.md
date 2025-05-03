@@ -17,6 +17,7 @@ This app is started via CLI, or can be started from docker desktop once the cont
 
 Clone the repository, then **cd into the top level AutoMark directory**.  
 > **NOTE:** It is important to be able to see the `shared/` directory when creating the container.  
+> This `shared/` is mounted as the shared folder. If the host path is changed or removed, the container (or the path) will need to be recreated.  
 
 
 ### Bash Scripts  
@@ -66,9 +67,11 @@ To get live logs, run with the `-a` tag, e.g. `docker start -a automark-1.0.0`.
 - With this tag, closing the terminal or pressing `CTRL+C` will stop the container.  
 
 
-###### Running via Docker Desktop
+###### Running via Docker Desktop  
 
 Go to the `Containers` tab (in the top left). There you will see the container with the name `automark-1.0.0`.  
 There is a play button on the right hand side, under `Actions`. Clicking this play button will launch the container and turn into a stop button, used to stop the container.  
 
-Once running, open up any browser and navigate to `http://localhost:5000`.
+Once running, open up any browser and navigate to `http://localhost:5000`.  
+
+Clicking on the container will show further details, such as files (whilst running) or logs.  
